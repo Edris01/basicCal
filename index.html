@@ -9,19 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>BASIC CALCULATOR</h1>
-        <div>
-            <span id="num1"></span>
-            <span id="num2"></span>
+        <h1>BASIC CALC</h1>
+        <div class="display">
+            <input type="text" id="num1">
+            <input type="text" id="num2">
         </div>
+        <br>
         <div class="btn-group">
-            <button onclick="add()">ADD</button>
-            <button onclick="substract()">SUBTRACT</button>
+            <button id="add-btn">ADD</button>
+            <button id="substract-btn">SUBTRACT</button>
         </div>
         <br>
         <div class="btn-group"> 
-            <button onclick="times()">MUTLIPY</button>
-            <button onclick="divide()">DIVIDE</button>
+            <button id="mutliple-btn">MUTLIPY</button>
+            <button id="divide-btn">DIVIDE</button>
         </div>
         <p id="answer">Answer: </p>
     </div>

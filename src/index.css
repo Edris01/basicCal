@@ -3,7 +3,6 @@
 }
 body{
     margin: 0%;
-    padding-top: 5px;
 }
 .container{
     display: flex;
@@ -14,24 +13,34 @@ body{
     align-items: center;
 }
 h1{
-    color: red;
+    color: #ff0000;
     font-size:50px;
 }
 #num1, #num2{
     font-size: 50px;
 }
 button{
-    width: 10rem;
-    height: 4rem;
+    width: 170px;
+    height: 60px;
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 p{
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .btn-group{
     display: flex;
-    gap: 100px;
+    gap: 80px;
+}
+input{
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.display{
+    display: flex;
+    gap: 20px;
 }
