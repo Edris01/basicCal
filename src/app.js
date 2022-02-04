@@ -1,27 +1,29 @@
 "use stricit"
 
-let num1 = 2
-let num2 = 6
-let numberOne = document.getElementById("num1").textContent = num1
-let numberTwo = document.getElementById("num2").textContent = num2
-let answer = document.getElementById("answer")
+var num1 = document.querySelector("#num1")
+var num2 = document.querySelector("#num2")
+const answer = document.querySelector("#answer")
+const addBtn = document.querySelector("#add-btn")
+const substractBtn = document.querySelector("#substract-btn")
+const mutlipleBtn = document.querySelector("#mutliple-btn")
+const divideBtn = document.querySelector("#divide-btn")
 
-function add() {
-    let result = num1 + num2
+addBtn.addEventListener("click", function() {
+    const result = parseInt(num1.value) + parseInt(num2.value)
     answer.textContent = "Answer: " + result
-}
+})
 
-function substract() {
-    let result = num1 - num2
+substractBtn.addEventListener("click", function() {
+    const result = num1.value - num2.value
     answer.textContent = "Answer: " + result
-}
+})
 
-function times() {
-    let result = num1 * num2
+mutlipleBtn.addEventListener("click", function() {
+    const result = num1.value * num2.value
     answer.textContent = "Answer: " + result
-}
+})
 
-function divide() {
-    let result = num1 / num2
+divideBtn.addEventListener("click", function() {
+    const result = num1.value / num2.value
     answer.textContent = "Answer: " + result
-}
+})
